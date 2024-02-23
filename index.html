@@ -106,8 +106,8 @@
         }
 
         .image-text-section img {
-            width: 433px;
-            height: 403px;
+            width: 100%;
+            height: auto;
             border-radius: 10px 10px 0 0; /* Apply border-radius only to top corners */
         }
 
@@ -140,6 +140,13 @@
 
         .image-text-section button:hover {
             background-color: var(--secondary-color);
+        }
+        
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .image-text-section {
+                width: 100%;
+            }
         }
     </style>
 </head>
