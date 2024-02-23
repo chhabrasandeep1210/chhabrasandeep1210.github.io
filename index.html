@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style >
+        /* Color Scheme */
+        :root {
+            --primary-color: #4CAF50; /* Green */
+            --secondary-color: #0D4D00; /* Darker Green */
+            --background-color: #F7F4EB; /* Light Beige */
+            --text-color: #333; /* Dark Gray */
+        }
+
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Top Bar Styles */
+        .top-bar {
+            background-color: var(--primary-color);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        .top-bar a:hover {
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+        }
+
+        /* Header Styles */
+        .header-section {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px; /* Adjust as needed */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            animation: changeBackground 10s infinite; /* Change background every 10 seconds */
+            position: relative;
+        }
+
+        @keyframes changeBackground {
+            0% { background-image: url('https://www.purdueglobal.edu/blog/student-life/sustainability-resources.jpg'); }
+            50% { background-image: url('https://greentumble.com/wp-content/uploads/2016/12/being-green.jpg'); }
+            100% { background-image: url('https://www.purdueglobal.edu/blog/student-life/sustainability-resources.jpg'); }
+        }
+
+        .header-content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 80%;
+        }
+
+        .header-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header-content p {
+            font-size: 1.2em;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Image and Text Section Styles */
+        .image-text-section-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-text-section {
+            width: calc(25% - 20px); /* Adjust as needed */
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+            overflow: hidden; /* Ensure border-radius applies properly */
+            margin: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-text-section:hover {
+            transform: translateY(-5px);
+        }
+
+        .image-text-section img {
+            width: 433px;
+            height: 403px;
+            border-radius: 10px 10px 0 0; /* Apply border-radius only to top corners */
+        }
+
+        .image-text-section .text-content {
+            padding: 20px;
+        }
+
+        .image-text-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .image-text-section p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .image-text-section button {
+            width: 100%;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            background-color: var(--primary-color);
+            border: none;
+            color: white;
+            border-radius: 0 0 10px 10px; /* Apply border-radius only to bottom corners */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .image-text-section button:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="#">Home</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Authors/Sources</a>
+    </div>
+
+    <div class="header-section">
+        <div class="header-content">
+            <h1>Your Website Title</h1>
+            <p>Short Description Here. </p>
+        </div>
+    </div>
+
+    <div class="image-text-section-container">
+        <div class="image-text-section">
+            <img src="https://media.licdn.com/dms/image/D4D12AQGsZqm8wGNHjg/article-cover_image-shrink_720_1280/0/1692003109438?e=2147483647&v=beta&t=whHydxA0g-zIlJQK4BoVzoXW2vU-XKI_nqT6hnHdFsY">
+            <div class="text-content">
+                <h2>All About Green Energy</h2>
+                <p>Green energy, derived from renewable sources, offers a sustainable alternative to conventional fossil fuels. Solar power harnesses sunlight through photovoltaic cells, while wind power utilizes the kinetic energy of the wind via turbines.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="image-text-section">
+            <img src="https://www.checkatrade.com/blog/wp-content/uploads/2021/10/Feature-green-home-energy-solutions.jpg">
+            <div class="text-content">
+                <h2>Home Solutions</h2>
+                <p>Overview of various green energy solutions (solar panels, wind turbines, energy-efficient appliances, etc.). Detailed information on each solution, including how it works and its benefits. Cost breakdown for each solution, installation considerations, and potential savings.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="image-text-section">
+            <img src="https://www.the-sun.com/wp-content/uploads/sites/6/2023/02/piles-dollar-bills-reflected-glass-718260326-1.jpg?w=620">
+            <div class="text-content">
+                <h2>Tax Rebates Information</h2>
+                <p>Description 1.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="image-text-section">
+            <img src="https://media.licdn.com/dms/image/D4D12AQHcgBdcTElIZQ/article-cover_image-shrink_720_1280/0/1680152448906?e=2147483647&v=beta&t=i2O6z8tvrrHMNudTumH6XHPuaegkcA7nqcV8V1e9i34">
+            <div class="text-content">
+                <h2>Clean Energy Practices</h2>
+                <p>Description 1.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
