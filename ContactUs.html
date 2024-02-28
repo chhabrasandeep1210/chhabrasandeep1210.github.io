@@ -73,6 +73,71 @@
             padding: 10px;
         }
 
+.container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            justify-content: space-between;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .section {
+            width: 48%; /* Adjust as needed */
+            margin-bottom: 40px;            
+        }
+        .contact-info, .contact-form {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .contact-info h2, .contact-form h2 {
+            margin-top: 0;
+        }
+        .contact-info p {
+            margin-bottom: 0;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form textarea {
+            height: 150px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        h1, h2, h3 {
+            color: #333;
+            text-align: center;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #0A400;
+        }
         /* Footer Styles */
         .footer {
             background-color: var(--primary-color);
@@ -94,6 +159,13 @@
             width: 100%;
         }
 
+        /* Mobile-friendly styles */
+
+    @media (max-width: 768px) {
+        .section {
+            width: 100%;
+        }
+    }        
     </style>
 </head>
 <body>
@@ -116,15 +188,37 @@
     </div>
 
     <div class="article">
-        <img src="https://media.licdn.com/dms/image/D4D12AQGsZqm8wGNHjg/article-cover_image-shrink_720_1280/0/1692003109438?e=2147483647&v=beta&t=whHydxA0g-zIlJQK4BoVzoXW2vU-XKI_nqT6hnHdFsY" alt="Green Energy">
+<div class="container">
+        <div class="section">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:GreenInitiatives@gmail.com">GreenInitiatives@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <strong>Phone:</strong> 425-777-666</p>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Faculty of Research, Seattle, Washington</p>
+            </div>
+        </div>
 
-<h2>All about Green energy!</h2>
-	
-        <p>Green energy, derived from renewable sources, offers a sustainable alternative to conventional fossil fuels. Solar power harnesses sunlight through photovoltaic cells, while wind power utilizes the kinetic energy of the wind via turbines. Hydropower taps into the movement of water, often in rivers or dams, to generate electricity, and geothermal energy captures heat from the Earth's interior.</p>
-        <p>Adopting green practices at home holds paramount importance for several reasons. Firstly, it significantly reduces greenhouse gas emissions, mitigating climate change. Secondly, it curtails air and water pollution, fostering cleaner environments. Thirdly, green technologies prioritize energy efficiency, maximizing resource utilization while minimizing waste. Moreover, reliance on renewable resources ensures sustainability, circumventing the depletion of finite fossil fuels.</p>
-        <p>Ongoing technological advancements further enhance the efficacy and affordability of green energy solutions, extending their applicability across various domains like electricity generation, transportation, and heating systems. Despite the benefits, challenges such as intermittency and energy storage persist, necessitating continued innovation. Globally, initiatives are underway to bolster the adoption of green energy, aligning with broader efforts to combat climate change and achieve sustainability goals.</p>
-        <p>In contrast, conventional energy sources exact a heavy toll on the environment, emitting pollutants, exacerbating climate change, and degrading ecosystems. Transitioning towards green energy represents a crucial step towards a cleaner, more sustainable future.</p>
-        <img src="">
+        <div class="section">
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form action="#" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        
     </div>
 
     <footer>
